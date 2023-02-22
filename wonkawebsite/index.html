@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Wonka Industries</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name=”viewport” content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="nav">
+                <nav class="nav"><ul>
+                    <a href="#home">Home</a>
+                    <a href="#abouttitle"> About</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#contact"> Contact</a>
+                </ul></nav>
+                <div>
+                    <img src="img/navbarassets.png" width="150px" class="icons">
+                </div>
+            </div>
+            <div id="logo">
+                <img src="img/logo.png">
+            </div>
+
+            <div id="home">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width -->
+                  <div class="mySlides slidefade">
+                    <img src="img/homepage.gif" style="width:100%">
+                  </div>
+
+                  <div class="mySlides slidefade">
+                    <img src="img/image2.png" style="width:100%">
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+
+            <div id="abouttitle">
+                <button class="aboutbtn"><a href="#aboutcreators">CREATOR</a></button>
+                <button class="aboutbtn2"><a href="#aboutwhere">LOCATION</a></button>
+                <img src="img/about_shopbg.png">
+
+            </div>
+            <div id="aboutcreators">
+                <h1>INTRODUCING THE GENIUS CHOCOLATIER</h1>
+                <img src="img/willywonka.png" width=450px>
+                <p><b>THE BEGINNINGS</b><br> Willy Wonka started his chocolate business after some time after, and he started a small shop on Cherry street. With Wonka's amazing candy, he soon became a billionaire, and with all that money, he built his own chocolate factory.<br>
+                <br>
+                <b>ABOUT</b><br>Willy Wonka is a phoenix-like man arising from his creative and eccentric genius. He bewilders others with his antics, but the lucky last winner of the golden ticket, Charlie, was the only one to enjoy Mr. Wonka's behaviour.</p>
+
+            </div>
+            <div id="aboutwhere">
+                <h1>Where?</h1>
+                <img src="img/map.png" class="map">
+
+            </div>
+
+
+            <div id="preview">
+                <div class="longyellow">
+                    <h1>Featured Candy</h1>
+                </div><br><!-- the br makes a sqaure move down so it is inline -->
+                <div class="preview">
+                <div class="yellow">
+                    <img src="img/products/gobstopperpreview.png" width="400px">
+                    <div class="middle">
+                        <button class="view" data-toggle="modal" data-target="#item3">QUICK VIEW</button>
+                    </div>
+                    <div class="captiontxt">Everlasting Gobstopper
+                    </div><div class="captiontxt">$6.70</div>
+                </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="item3" tabindex="-1" role="dialog" aria-labelledby="item3title" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div id="item3title" class="modal-body">
+                          <h1 class="modal-title">Everlasting Gobstopper</h1>
+                          <img src="img/products/gobstpper.png" width=450px>
+                          <p class="captiontxt" style="text-align: center"><b>$6.70</b></p>
+                          <p style="text-align: center">Description</p>
+                          <p> Made for children with very little pocket money. It not only changes colours and flavours when sucked on, but also never gets any smaller or disappears. It's EVERLASTING!</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"  onClick="Alert()" data-toggle="modal" data-target="#alertmessage">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="preview">
+                <div class="yellow"><img src="img/products/wonkabarpreview.png" width="400px">
+                    <div class="middle">
+                        <button class="view" data-toggle="modal" data-target="#item24">QUICK VIEW</button>
+                    </div>
+                    <div class="captiontxt">Wonka Bar
+                    </div><div class="captiontxt">$13.00</div>
+                </div>
+                </div>
+
+                 <div class="modal" id="item24" tabindex="-1" role="dialog" aria-labelledby="item24title" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div id="item24title" class="modal-body">
+                          <h1 class="modal-title">Wonka Bar</h1>
+                          <img src="img/products/wonkabar.png" width=450px>
+                          <p class="captiontxt" style="text-align: center"><b>$13.00</b></p>
+                          <p style="text-align: center">Description</p>
+                          <p>The Wonka Bar is the creamiest and sweetest candy bar in the world. BUY to <b>win</b> a tour around Wonka Industries!</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"  onClick="Alert()" data-toggle="modal" data-target="#alertmessage">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="preview">
+                <div class="yellow"><img src="img/products/scrumpreview.png" width="400px">
+                    <div class="middle">
+                        <button class="view" data-toggle="modal" data-target="#item18">QUICK VIEW</button>
+                    </div>
+                    <div class="captiontxt">Scrumpdiddlyumptious
+                    </div><div class="captiontxt">$7.00</div>
+                </div>
+                </div>
+
+                <div class="modal" id="item18" tabindex="-1" role="dialog" aria-labelledby="item18title" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div id="item18title" class="modal-body">
+                          <h1 class="modal-title">Scrumpdiddlyumptious</h1>
+                          <img src="img/products/scrum.png" width=450px>
+                          <p class="captiontxt" style="text-align: center"><b>$7.00</b></p>
+                          <p style="text-align: center">Description</p>
+                          <p>It contains <b>scrumptious</b> toffee, crispy cookie, and crunchy peanuts.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary"  onClick="Alert()" data-toggle="modal" data-target="#alertmessage">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="longyellow"><button ><a href="shop.html">View More</a></button></div>
+
+            </div>
+
+            <div id="contact">
+                <div class="longyellow"><img src="img/contacttitle.png"></div>
+                <div class="contactcontainer">
+                 <form action="/my-handling-form-page" method="post">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="name"> Name</label>
+                        </div>
+                        <div class="col-md-9">
+                          <input type="text" id="name" name="user_name" placeholder="Your name..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="mail">E-mail</label>
+                        </div>
+                        <div class="col-md-9">
+                          <input type="email" id="mail" name="user_email" placeholder="Your email..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-md-9">
+                          <input type="text" id="subject" name="subject" placeholder="Your subject..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="msg">Message</label>
+                        </div>
+                        <div class="col-md-9">
+                          <textarea id="msg" name="user_message" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                          <div class="col-sm-5">
+                            <input type="submit" value="Submit">
+                          </div>
+                      </div>
+                </form>
+                </div>
+
+            
+        </div>
+            <div id="footer">
+                <div class="footertxt">Location: 1445 West Norwood Avenue, Itasca, Illinois</div>
+                <div class="footertxt">Email: Wonka@wonkaindustries.com
+                </div>
+                <div class="footertxt">Contacts: WIN A TRIP TO THE FACTORY TO MEET IN FIRST PERSON!
+                </div>
+                <div class="footertxt">Copyright Statment: ALL products, items, names, picture are not mine. Products, Items, Names belong to Nestle Candy Shop and Willy Wonka franchise. Photos of products ALL conducted from Online Candy Stores. I designed/created backgrounds and titles. 
+                </div>
+            
+        </div>
+            <div id="copyright">&copy; Eva Juriss 2022</div>
+    </div>
+    </body>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+
+    
+    </script>
+    <script>
+        function Alert() {
+            alert("An Item has been added to your cart!")
+        }  
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    
+    
+</html>

@@ -1,0 +1,1012 @@
+/* COLOUR PALETTE
+
+yellow #ffc80f
+deep purple #771083
+purple #8e4694
+lilac #dfbddd
+brown #47180b
+peach #f57185
+hotpink #ff28aa
+deep pink #c62a89
+plum #821051
+
+
+DIMENTIONS
+
+COMMON WEB width: 1366px
+MY width: 1920px
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+body { 
+    background-color: #821051;
+    line-height: 1.6;
+    height: 100vh;
+    overflow-y: visible;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#home {
+    background-color: #f57185;
+    height: auto;
+    width: 100%;
+    position: relative; /* necessary to position child elements */
+    overflow: hidden;
+    
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  overflow: hidden; /* Hide scrollbars */
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+
+
+/* Fading animation */
+.slidefade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#nav {
+    display: block;
+    background-color: #ffc90f;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    overflow: hidden;
+}
+
+#logo {
+    background-color: transparent;
+    height: 150px;
+    position: fixed;
+    z-index: 3; /* logo div to render above nav */
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    top: 10%;
+     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 0.5));
+    
+}
+
+#logo img {
+    width: 250px;
+    overflow: hidden;
+    
+}
+
+.nav {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    overflow: hidden;
+    word-spacing: 2em;
+    overflow: hidden;
+    max-width: 500px;
+    width: 90%;
+    position: absolute;
+    top: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+
+/* unvisited link */
+nav a:link {
+    color: white;
+}
+
+
+/* mouse over link */
+.nav ul a:hover {
+    color: #c62a89;
+    transition: ease .7s;
+}
+
+button a {
+    text-decoration: none;
+    color: #dfbddd;
+}
+
+.icons {
+    float: right;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+}
+
+#abouttitle {
+    background-color: #47180b;
+    height: 900px;
+    width: 100%;
+    position: relative; /* necessary to position child elements */
+}
+
+#abouttitle img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#aboutcreators {
+    display: grid;
+    grid-template-columns: 35% 10%;
+    background-color: #c62a89;
+    background-image: url("img/swrillybg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative; /* necessary to position child elements */
+}
+
+#aboutcreators img {
+    position: relative;
+    left: -70%;
+    top: 0%;
+     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
+    margin: 0;
+    overflow: hidden;
+    grid-column: 2;
+    
+}
+
+#aboutcreators p {
+    grid-column: ;
+    overflow: hidden;
+    width: 90%;
+    height: 100%;
+    
+}
+
+#aboutcreators h1 {
+    grid-column: 1/4;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+p {
+    color: white;
+    padding-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+    font-size: 16pt;
+    height: auto;
+    letter-spacing: 0.06em;
+    word-spacing: 0.06em;
+    
+}
+
+modal-body p {
+    height: auto;
+}
+    
+}
+#aboutwhere {
+    background-color: #8e4694;
+    height: 100%;
+    height: auto;
+    width: 100%;
+    position: relative; /* necessary to position child elements */
+}
+
+.aboutbtn a, .aboutbtn2 a {
+    color: #f57185;
+}
+
+.aboutbtn {
+    position: relative;
+    color: #f57185;
+    left: 205px;
+    top: 150px;
+    border-style: double;
+    border-radius: 10px;
+    border-color: brown;
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 1;
+    
+}
+
+.aboutbtn2 {
+    position: relative;
+    color: #f57185;
+    top: 250px;
+    border-style: hidden;
+    font-size: 40px;
+    font-weight: 400;
+    border-style: double;
+    border-radius: 10px;
+    border-color: brown;
+    font-size: 40px;
+    z-index: 1;
+    
+}
+
+/* mouse over link */
+.aboutbtn a:hover, .aboutbtn2 a:hover {
+  color: #c62a89;
+}
+
+.map{
+    width: 100%;
+}
+
+#preview {
+    display: grid;
+    background-color: #771083;
+    grid-template-columns: 33.33% 33.33% 33.33% 33.33%;
+    height: 100%;
+    grid-template-rows: 15% 70% 15%;
+    background-color: #771083;
+    width: 100%;
+    position: relative; /* necessary to position child elements */
+    overflow: hidden;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-color:#dfbddd;
+}
+
+
+.yellow {
+
+    background-color: #8e4694;
+    margin: 15px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 5px 5px #dfbddd;
+    overflow: hidden;
+
+}
+
+.longyellow{
+    background-color: transparent;
+    margin: 15px;
+    padding 15px;
+    grid-column: 4/1;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+
+
+#preview .longyellow {
+    height: 100px;
+}
+
+.captiontxt {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.preview {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.preview:hover img {
+    opacity 0.3;
+}
+
+.preview:hover .middle {
+    opacity: 1;
+}
+
+#shop .captiontxt {
+    padding: 5px;
+}
+
+.footertxt {
+    padding: 6px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 9.5pt;
+    color: white;
+    font-family: sans-serif;
+}
+
+button {
+    background-color: transparent;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    color: #dfbddd;
+    cursor: pointer;
+    border-color: #dfbddd;
+    border-style: dashed;
+    text-align: center;
+}
+
+.view {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    color: rgb(71, 24, 11);
+    cursor: pointer;
+    border-style: none;
+    z-index: 3;
+}
+
+
+#shop {
+    display: grid;
+    padding-top: 100px;
+    background-color: #771083;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% ;
+    background-image: url("img/shopbg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* necessary to position child elements */
+}
+
+#shop .longyellow {
+    grid-column: 1/4;
+    display: block;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#shop .longyellow img{
+    width: 500px;
+}
+
+#shop .yellow {
+    background-color: #c62a89;
+    box-shadow: 5px 5px #47180b;
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    padding: 0px;
+    width: 200px;
+    
+}
+
+
+#contact, #contact2 {
+    background-color: #821051;
+    height: 100%%;
+    width: 100%;
+    position: relative; /* necessary to position child elements */
+    border-bottom: dashed;
+    border-color:#dfbddd;
+
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20pt;
+    
+}
+
+input[type=submit] {
+  background-color: #f57185;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  box-sizing: border-box;
+
+}
+
+input[type=submit]:hover {
+  background-color: #c62a89;
+  box-sizing: border-box;
+    transition: ease .5s;
+}
+
+.contactcontainer {
+    border-radius: 5px;
+    background-color: transparent;
+    max-width: 1000px;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+form{
+    width: 50vw; 
+    margin-left : 20vw;
+    overflow: hidden;
+    padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+
+#copyright {
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    position: fixed; /* positioned relative to the viewport */
+    right: 5px;
+    bottom: 5px;
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+#footer {
+    background-color: #771083;
+    height: 20%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    color: #dfbddd;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    padding: 5px;
+    overflow: hidden;
+}
+
+
+
+
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    #nav {
+    display: block;
+    background-color: #ffc90f;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    overflow: hidden;
+
+
+    }
+    
+    #logo {
+    left: 90%;
+    top: 10%;
+     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
+    width: 100px;
+    height:70px
+    }
+    
+.nav {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    overflow: hidden;
+    overflow: hidden;
+    max-width: 500px;
+    width: 90%;
+    position: absolute;
+    top: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+/* unvisited link */
+nav a:link {
+    color: white;
+}
+
+
+/* mouse over link */
+.nav ul a:hover {
+    color: #c62a89;
+    transition: ease .7s;
+}
+
+button a {
+    text-decoration: none;
+    color: #dfbddd;
+}
+
+.icons {
+    float: right;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    width: 50px;
+}
+    #abouttitle {
+        height: 300px;
+    }
+    .aboutbtn {
+        font-size: 15pt;
+        left: 10px;
+        top: 30px;
+        width: auto;
+    }
+    .aboutbtn2 {
+        font-size: 15pt;
+        left: 10px;
+        top: 30px;
+        width: auto;
+    }
+    #aboutcreators {
+        height: auto;
+    }
+    
+    #aboutcreators img {
+        width: 260px;
+        padding-top: 10px;
+        left: -100%;
+        top: 0%;
+         -ms-transform: translate(-50%, -50%);
+        transform: translate(0%, -8%);
+    }
+    #aboutcreators p {
+        grid-column: 4/1;
+        width: auto;
+        padding-bottom: 5px;
+    }
+    #aboutwhere h1 {
+        font-size: 20pt;
+    }
+    
+    #preview {
+        display: block;
+        height: auto;
+    }
+    #preview .longyellow h1{
+        font-size: auto;
+        padding-top: 40px;
+    }
+    #preview .yellow img {
+        width: 200px;
+    }
+    .view {
+        width: auto;
+    }
+    
+    #contact .longyellow img {
+        width: 300px;
+    }
+    
+    #contact2 .longyellow img {
+        width: 300px;
+    }
+    
+    #shop {
+    display: grid;
+    padding-top: 110px;
+    grid-template-columns: 33.3% 33.33% 33.33%;
+    grid-template-rows:10% 8% 12% 15% 13% 13% 11% 10%;
+    height: auto;
+    
+    }
+
+    #shop .longyellow img {
+        width: 450px;
+        text-align: center;
+        float: left;
+    }
+    
+    #shop .preview .yellow{
+     width: 130px;
+    }
+    
+    #shop .preview img{
+        width: 100px ;
+    }
+    
+    #shop .captiontxt{
+        font-size: 10pt;
+    }
+    
+    .hidden, .show {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 100%
+    }
+  
+}
+
+
+@media screen and (min-width: 992px) {
+    
+    .container {
+        max-width: 100%
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+        
+    }
+    #nav {
+    background-color: #ffc90f;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    overflow: hidden;
+}
+
+#logo {
+    background-color: transparent;
+    height: 150px;
+    width: auto;
+    position: fixed;
+    z-index: 3; /* logo div to render above nav */
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    top: 10%;
+     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 0.5));
+    
+}
+
+#logo img {
+    width: 250px;
+    overflow: hidden;
+    
+}
+
+.nav {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    overflow: hidden;
+    word-spacing: 2em;
+    overflow: hidden;
+    max-width: 500px;
+    width: 90%;
+    position: absolute;
+    top: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+
+/* unvisited link */
+nav a:link {
+    color: white;
+}
+
+
+/* mouse over link */
+.nav ul a:hover {
+    color: #c62a89;
+    transition: ease .7s;
+}
+
+button a {
+    text-decoration: none;
+    color: #dfbddd;
+}
+
+.icons {
+    float: right;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    width: 150px;
+}
+    
+    #abouttitle {
+    background-color: #47180b;
+    height: 900px;
+    width: 100%;
+    position: relative; /* necessary to position child elements */
+   }
+
+    #abouttitle img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    #aboutcreators {
+        display: grid;
+        grid-template-columns: 35% 10%;
+        background-color: #c62a89;
+        background-image: url("img/swrillybg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 100%;
+        position: relative; /* necessary to position child elements */
+    }
+
+    #aboutcreators img {
+        position: relative;
+        left: 100%;
+        top: 0%;
+         -ms-transform: translate(-50%, -50%);
+        transform: translate(-100%, -15%);
+        margin: 0;
+        overflow: hidden;
+        grid-column: 2;
+        width: 400px;
+
+    }
+
+    #aboutcreators p {
+        grid-column: 3/5;
+        overflow: hidden;
+        width: 90%;
+        height: 100%;
+
+    }
+
+    #aboutcreators h1 {
+        grid-column: 2/4;
+        text-align: center;
+        margin: 0;
+        overflow: hidden;
+        padding-top: 50px;
+    }
+        #preview {
+        display: grid;
+        background-color: #771083;
+        grid-template-columns: 33.33% 33.33% 33.33% 33.33%;
+        height: 100%;
+        grid-template-rows: 15% 70% 15%;
+        background-color: #771083;
+        width: 100%;
+        position: relative; /* necessary to position child elements */
+        overflow: hidden;
+        border-top-style: dashed;
+        border-bottom-style: dashed;
+        border-color:#dfbddd;
+    }
+        #preview .longyellow h1{
+            font-size: auto;
+            padding-top: 40px;
+        }
+        #preview .yellow img {
+            width: 400px;
+        }
+        .view {
+            width: auto;
+        }
+
+    #aboutwhere {
+        background-color: #8e4694;
+        height: 100%;
+        height: auto;
+        width: 100%;
+        position: relative; /* necessary to position child elements */
+    }
+
+    #aboutwhere h1 {
+        font-size: 30pt;
+    }
+
+    .aboutbtn a, .aboutbtn2 a {
+        color: #f57185;
+    }
+
+    .aboutbtn {
+        position: relative;
+        color: #f57185;
+        left: 180px;
+        top: 150px;
+        border-style: double;
+        border-radius: 10px;
+        border-color: brown;
+        font-size: 40px;
+        font-weight: 400;
+        z-index: 1;
+
+    }
+
+    .aboutbtn2 {
+        position: relative;
+        color: #f57185;
+        top: 250px;
+        border-style: hidden;
+        font-size: 40px;
+        font-weight: 400;
+        border-style: double;
+        border-radius: 10px;
+        border-color: brown;
+        font-size: 40px;
+        z-index: 1;
+
+    }
+
+       #contact .longyellow img {
+            width: auto;
+        }
+
+        #contact2 .longyellow img {
+            width: auto;
+        }
+
+        #shop {
+        display: grid;
+        padding-top: 100px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 15% 10%;
+        height: 3000px;
+
+        }
+
+        #shop .longyellow img {
+            width: 900px;
+            margin-left: 250px;
+
+        }
+
+        #shop .preview .yellow{
+         width: auto;
+         height: 4auto00px;
+        }
+
+        #shop .preview img{
+            width: 200px;
+        }
+
+        #shop .captiontxt{
+            font-size: 15pt;
+        }
+    
+        .show {
+            display: block;
+        }
+    
+
+}
